@@ -1,0 +1,6 @@
+<?php
+$s_plugin_mantisbtHotkeys_title = 'MantisBT Hotkeys';
+$s_plugin_mantisbtHotkeys_description = 'Adds keyboard shortcuts for navigating';
+$s_plugin_mantisbtHotkeys_configuration = 'Configuration';
+$s_plugin_mantisbtHotkeys_foo_or_bar = 'Foo or Bar?';
+$s_plugin_mantisbtHotkeys_reset = 'Reset Value';
