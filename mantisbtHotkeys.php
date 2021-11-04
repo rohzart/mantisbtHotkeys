@@ -27,7 +27,7 @@ class mantisbtHotkeysPlugin extends MantisPlugin {
 	function scripts()
 	{
 		if( $this->is_enabled() ) 
-            echo '<script type="text/javascript" src="' . plugin_file( 'hotkeys.js' ) . '"></script>';
+            echo '<script type="text/javascript" src="' . plugin_file( 'hotkeys.prod.js' ) . '"></script>';
 	}
 
 	function is_enabled()

@@ -43,13 +43,13 @@ Adds keyboard shortcuts for navigation.
 
 ---
 
-**Combo**: ```s+u```m'
+**Combo**: ```s+u+m```
 
 **Action**: Opens the 'Summary' page.
 
 ---
 
-**Combo**: ```m+a```n'
+**Combo**: ```m+a+n```
 
 **Action**: Opens the 'Manage' page.
 
@@ -67,27 +67,33 @@ Adds keyboard shortcuts for navigation.
 
 ---
 
-**Combo**: ```Alt```s'
+**Combo**: ```Alt+s```
 
 **Action**: Submits the form on the 'Report Issue' page.
 
 ---
 
-**Combo**: ```Alt```\'
+**Combo**: ```Alt+\```
 
 **Action**: Takes focus to the 'Search' text control.
 
 ---
 
-**Combo**: ```Alt```\+x'
+**Combo**: ```Alt+x```
 
 **Action**: Takes focus to the 'Search Filter' dropdown control.
 
 ---
 
-**Combo**: ```Alt```p'
+**Combo**: ```Alt+p```
 
 **Action**: Takes focus to the 'Projects' Menu.
+
+---
+
+**Combo**: ```Alt+ArrowDown``` and ```Alt+ArrowUp```
+
+**Action**: Moves focus to the next/previous issue summary.
 
 ---
 

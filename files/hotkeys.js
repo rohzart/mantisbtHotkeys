@@ -16,6 +16,30 @@ function addHotKeys(shortcuts) {
     });
 }
 
+const issue_summary_elements = window.location.href.includes('view_all_bug_page')
+    ? document.querySelectorAll('#buglist .column-summary a')
+    : [];
+
+function focus_on_issue(next) {
+    let el_count = issue_summary_elements.length;
+    if (el_count <= 0) return;
+    let next_index = 0;
+    for (const [index, element] of issue_summary_elements.entries()) {
+        if (element === document.activeElement) {
+            next_index = next
+                ? index + 1
+                : index - 1;
+            if (next && el_count === next_index) {
+                next_index = 0;
+            }
+            if (!next && next_index === 0) {
+                next_index = el_count;
+            }
+        }
+    }
+    issue_summary_elements[next_index].focus();
+}
+
 const shortcuts = [
     {
         combo: 'm+v',
@@ -95,6 +119,14 @@ const shortcuts = [
         action: function () {
             document.querySelector('#dropdown_projects_menu a').focus();
         }
+    },
+    {
+        combo: 'Alt+ArrowDown',
+        action: function () { focus_on_issue(true); }
+    },
+    {
+        combo: 'Alt+ArrowUp',
+        action: function () { focus_on_issue(false); }
     }
 ];
 
