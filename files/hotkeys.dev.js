@@ -29,7 +29,7 @@ function addHotKeys(shortcuts) {
   });
 }
 
-var issue_summary_elements = window.location.href.includes('view_all_bug_page') ? document.querySelectorAll('#buglist .column-summary a') : [];
+var issue_summary_elements = window.location.href.includes('view_all_bug_page') ? document.querySelectorAll('#buglist td.column-summary a') : [];
 
 function focus_on_issue(next) {
   var el_count = issue_summary_elements.length;
@@ -52,8 +52,8 @@ function focus_on_issue(next) {
           next_index = 0;
         }
 
-        if (!next && next_index === 0) {
-          next_index = el_count;
+        if (!next && next_index === -1) {
+          next_index = el_count - 1;
         }
       }
     }
